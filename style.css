@@ -3,6 +3,7 @@
   --white-text-color:#F9FAF8;
   --dark-blue-color:#1F2937;
   --light-blue-color:#3882F6;
+  --gray-secondary-color:#E5E7EB;
 }
 *{
   box-sizing: border-box;
@@ -65,11 +66,11 @@ h1{
 }
 .hero-subtext{
   font-size: 18px;
+  color: var(--gray-secondary-color);
 }
 button{
   color: var(--white-text-color);
   background-color: var(--light-blue-color);
-  padding: 8px;
   width: fit-content;
   border-radius: 4px;
   border-style: none;
@@ -95,28 +96,80 @@ button:active{
 h2{
   display: flex;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   justify-content: center;
   align-items: center;
-  color: var(--dark-blue-color)
+  color: var(--dark-blue-color);
+  font-size: 32px;
+  font-weight: 800;
 }
 .info-container{
   display: flex;
   flex-direction: row;
-  border: solid;
   gap: 50px;
   align-items: center;
   justify-content: center;
 }
+.info-img{
+  border: solid;
+  border-color: var(--light-blue-color);
+  border-width: 3px;
+  border-radius: 4px;
+}
+figcaption{
+  font-size: 18px;
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--dark-blue-color);
+}
 .info{
   display: flex;
-  border: solid;
-  border-width: 1px;
   max-width: 300px;
+  min-height: 300px;
   flex-direction: column;
+  padding: 1rem 2rem 3rem 2rem;
+}
+.testimonial-container{
+  background-color: var(--gray-secondary-color);
+  display: flex;
+  padding: 150px;
+}
+blockquote{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 36px;
+  font-weight: 200;
+  font-style: italic;
+}
+cite{
+  font-size: 20px;
+  font-weight: bold;
+  font-style: unset;
+}
+.call-to-action-section{
+padding: 100px;
 }
 .call-to-action{
+  display: flex;
+  padding: 2rem 2rem;
   background-color: var(--light-blue-color);
+  border-radius: 6px;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--white-text-color);
+}
+.call-text, .call-header{
+  color: var(--white-text-color);
+  text-align: center;
+}
+.call-btn{
+  border: solid;
+  border-color: var(--white-text-color);
+  height: fit-content;
+  padding: 8px 16px;
+  display: flex;
 }
 header, footer{
   padding: 16px;
